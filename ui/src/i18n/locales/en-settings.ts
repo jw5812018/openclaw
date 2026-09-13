@@ -294,7 +294,7 @@ const enSettings = {
   },
   modelProviders: {
     title: "Configured providers",
-    configureModels: "Configure Models",
+    configureModels: "Model setup",
     login: {
       action: "Connect provider",
       title: "Connect a provider",
@@ -430,6 +430,7 @@ const enSettings = {
       utilityHelpAutomatic:
         "Automatic uses the primary model provider's recommended small model when available. Generated titles otherwise use the primary model.",
       automatic: "Automatic (provider default)",
+      automaticUnavailable: "No recommended small model",
       disabled: "Disabled",
       fallback: "Fallback Model",
       noFallback: "No fallback model",
@@ -976,6 +977,21 @@ const enSettings = {
       collapseTaskProgress: "Collapse task progress by default",
       collapseTaskProgressHint:
         "Keep task progress collapsed while work is active, then expand it when the response finishes.",
+    },
+    sessionSources: {
+      title: "Session sources",
+      hint: "Choose which coding apps show their existing conversations in the sidebar.",
+      scope: "Applies to everyone on this Gateway. Changes require a Gateway restart.",
+      claude: "Show Claude Code sessions",
+      codex: "Show Codex sessions",
+      opencode: "Show OpenCode sessions",
+      pi: "Show Pi sessions",
+      sourceHint:
+        "Discover conversations on this Gateway and eligible paired computers. Requires the {plugin} plugin to be enabled.",
+      empty: "No supported session source plugins are installed. Add one in Manage plugins.",
+      unavailable:
+        "Session source settings are unavailable. Reconnect or reload Settings to try again.",
+      managePlugins: "Manage plugins",
     },
     sidebarPrefs: {
       title: "Sidebar",
